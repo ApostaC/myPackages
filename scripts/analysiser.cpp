@@ -98,7 +98,7 @@ void senderr(const string & s)
 /*
  * FUNCTION readTo
  * Read text specified by an istream object line by line
- * until find one line matches specified regular expression 
+ * until find one line matches the given regular expression 
  * for a specified times
  * 
  * @param	in		: the specified input stream
