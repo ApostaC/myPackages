@@ -107,7 +107,7 @@ while [ -n "$1" ]; do
 			if [ "${1:0:1}"x = "-"x ]; then			#if next param is -*
 				generateData						#use default generate
 			else									#next param is filename
-				generate $1							#generate with filename
+				generateData $1							#generate with filename
 				shift 1;							#SHIFT filename
 			fi;;
 			
