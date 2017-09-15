@@ -23,3 +23,5 @@ build_up:
 
 clean:
 	cd ${SRCdir} && make clean
+	-rm -rf ${SCRIPTdir}
+	-rm -f ${HPLdir}/run.sh

@@ -1,10 +1,15 @@
-PUT analysiser.cpp AND run.sh with xhpl [${HPLDir}/bin/<ARCH>]
 ==============================================================
-1.Under this directory, compile generate.cpp
-	make
-2.Change data in config.dat
-3.Generate HPL*.dat using ./generate
-	./generate <cfgfile>
-  Default <cfgfile> will be config.dat, you can also use your own version.
-  Data will be generated to ./Data
+1) First, change HPLdir in Make.inc to the directory of xhpl. 
 
+2) Type command
+	make
+
+3) Under ${HPLdir}/scripts
+   Modify config.dat
+
+4) Under ${HPLdir}
+   Use run.sh to start
+   Type 
+	./run.sh -h
+   to get help
+==============================================================
