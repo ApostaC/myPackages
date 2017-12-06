@@ -24,6 +24,7 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'Valloric/YouCompleteMe'
 
+"Plugin 'artur-shaik/vim-javacomplete2'
 
 
 " All of your Plugins must be added before the following line
@@ -231,6 +232,10 @@ set backspace=2
 
 syntax on
 
+"map keys
+
+let mapleader=','
+
 imap jj <esc>
 imap <C-s> <esc>:w!<CR>i
 map <C-F9> : call Compile() <CR>
@@ -255,6 +260,11 @@ let g:ycm_server_python_interpreter='/usr/bin/python'
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
 let g:syntastic_always_populate_loc_list = 1
-nnoremap <leader>jdm:YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 imap <C-d> <esc>:YcmCompleter GoToDefinitionElseDeclaration<CR>i
+
+
+"javacomplete2
+
+autocmd FileType java setlocal omnifunc=javacomplete#Compelete
 
